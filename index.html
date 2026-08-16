@@ -149,13 +149,17 @@
     position:relative;
     overflow:hidden;
     background:var(--wine);
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
   .verse-figure img{
     width:100%; height:100%;
-    object-fit:cover;
+    object-fit:contain;
+    object-position:center;
     display:block;
     filter:saturate(0.92) contrast(1.02);
-    transform:scale(1.06);
+    transform:scale(1.0);
     transition:transform 1.4s cubic-bezier(.19,1,.22,1), filter 1.4s ease;
   }
   .verse.in-view .verse-figure img{
